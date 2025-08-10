@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <title>PT Survey</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+     <fieldset>
+       <h1 id="title">Personal Training Form</h1>
+
+       <p id="description">Please fill out the following form to sign up for a <strong>free consultation:</strong></p>
+     </fieldset>
+
+     <form action="project.txt" id="survey-form">
+
+      <!-- Section 1 -->
+      <fieldset>
+        <label id="name-label" for="name">
+          Your First Name:
+          <input placeholder="John" type="text" id="name" required />
+        </label>
+
+        <label for="second-name">
+          Your Surname:
+          <input placeholder="Doe" type="text" id="second-name" required />
+        </label>
+
+        <label id="email-label" for="email">
+          Email Address:
+          <input placeholder="John.Doe@gmail.com" type="email" id="email" required />
+        </label>
+
+        <label for="phone-num">
+          Phone Number:
+          <input placeholder="07804 123 123" type="number" id="phone-num" required />
+        </label>
+
+      </fieldset>
+
+      <!-- Section 2 -->
+      <fieldset>
+        <label id="number-label" for="number">
+          Age:
+          <input placeholder="18" type="number" id="number" min="18" max="100" required />
+        </label>
+      
+        <label for="dropdown">Sex:
+          <select id="dropdown">
+            <option value="">Select Option</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </label>
+      
+        <hr>
+        <div class="legend">Current exercise frequency (Hours per week):</div>
+
+        <label>
+          <input type="radio" name="hour" value="0" class="inline" /> 0
+        </label>
+        <label>
+          <input type="radio" name="hour" value="1" class="inline" /> 1
+        </label>
+        <label>
+          <input type="radio" name="hour" value="2" class="inline" /> 2
+        </label>
+        <label>
+          <input type="radio" name="hour" value="3" class="inline" /> 3
+        </label>
+        <label>
+          <input type="radio" name="hour" value="4" class="inline" /> 4
+        </label>
+        <label>
+          <input type="radio" name="hour" value="5plus" class="inline" /> 5+
+        </label>
+      
+
+
+        <hr>
+        <div class="legend">When you exercise, which form does this take?</div>
+
+        <label>
+          <input type="radio" name="type" value="cardio" class="inline" />
+          Cardiovascular (e.g. walking or running)
+        </label>
+        <label>
+          <input type="radio" name="type" value="resistance" class="inline" />
+          Resistance (e.g. squats, push-ups)
+        </label>
+        <label>
+          <input type="radio" name="type" value="both" class="inline" />
+          Both
+        </label>
+        <hr>
+      </fieldset>
+
+      <!-- Section 3: Injuries and agreement -->
+      <fieldset>
+        <label>
+          <input type="checkbox" value="injury" />
+          Do you have any current injuries?
+        </label>
+
+        <label for="underbox">
+          If yes, please explain:
+          <textarea id="underbox" rows="3" class="area" cols="60" placeholder="Eg: I have a bad lower back..."></textarea>
+        </label>
+
+        <label>
+          <input type="checkbox" value="terms" required />
+          I accept the terms and conditions
+        </label>
+      </fieldset>
+
+      <!-- Submit -->
+      <input type="submit" id="submit" value="Submit" class="button" />
+    
+    </form>
+  </body>
+</html>
